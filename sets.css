@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgba(238, 224, 143, 0.356);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: rgb(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+  display: inline-block;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+.options {
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: paleturquoise;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+}
+.options ul {
+  list-style: none;
+}
+.options ul li {
+  margin: 0 20px;
+  position: relative;
+  display: inline-block;
+}
+.options ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+.options ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.1s;
+}
+.options ul li:hover::after {
+  width: 100%;
+}
+.col-4 {
+  margin: 50px;
+}
+
+.img,
+.col-4 h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 50px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main img {
+  width: 450px;
+  padding: 50px;
+  margin: 50px 20px;
+  transition: 0.5s;
+}
+.main img:hover {
+  transform: scale(1.1);
+}
+.go-up {
+  position: fixed;
+  width: 50px;
+  bottom: 40px;
+  right: 10px;
+  line-height: 30px;
+  font-size: 60px;
+  color: blue;
+}
